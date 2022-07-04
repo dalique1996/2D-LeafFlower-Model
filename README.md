@@ -1,5 +1,5 @@
 # 2D-LeafFlower-Model
-Code for the simulation of the medio-lateral section of leaf and floral primordia models in MorphoDynamX.
+Code for the simulation of the medial longitudinal section of leaf and floral primordia models in MorphoDynamX.
 
 After installing MorphoDynamX, the models can be compiled by typing:
 
