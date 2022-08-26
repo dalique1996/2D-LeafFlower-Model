@@ -719,7 +719,7 @@ bool General::step()
 
     //SAVE A SNAPSHOT
       if(parm("Take Snapshots") == "True"){
-        QString fileName = QString::fromStdString(snapshotDir) + QString("Root-%1.png").arg(screenShotCount++, 4, 10, QChar('0'));
+        QString fileName = QString::fromStdString(snapshotDir) + QString("Flower-%1.png").arg(screenShotCount++, 4, 10, QChar('0'));
         takeSnapshot(fileName, 1, 1280*2, 720*2, 100, true);
       }
 
@@ -2199,14 +2199,13 @@ bool ChemicalSolver::initialize(QWidget* parent,std::string debFileName) {
        }
 
       //Strain: Initialize Strain direction
-      Point3d ref_pos=Point3d(0,-1000,0); //?¿?¿
 
-      for(CCIndex v:cs.vertices()){
-         if(verticeAttr[v].stiffRefVertex){
-            ref_pos=indexAttr[v].pos;
-            break;
-         }
-      }
+//      for(CCIndex v:cs.vertices()){ //Only for Leaf
+//         if(verticeAttr[v].stiffRefVertex){
+//            ref_pos=indexAttr[v].pos;
+//            break;
+//         }
+//      }
 
       //Pass attr to traingulate faces
         for(CCIndex f:ts.faces()){
