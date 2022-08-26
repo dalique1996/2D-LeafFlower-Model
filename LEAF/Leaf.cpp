@@ -719,7 +719,7 @@ bool General::step()
 
     //SAVE A SNAPSHOT
       if(parm("Take Snapshots") == "True"){
-        QString fileName = QString::fromStdString(snapshotDir) + QString("Root-%1.png").arg(screenShotCount++, 4, 10, QChar('0'));
+        QString fileName = QString::fromStdString(snapshotDir) + QString("Leaf-%1.png").arg(screenShotCount++, 4, 10, QChar('0'));
         takeSnapshot(fileName, 1, 1280*2, 720*2, 100, true);
       }
 
@@ -2362,7 +2362,7 @@ void MechanicalSolver::solveConstraints(double& dStrainADIN, double& dStrainADL1
                 else
                   fD.stress=fD.force;
             }
-            else{ //inner predefined pattern
+            else{ //inner predefined pattern (favor anisotropy AD-AB axis)
 
                 if(stepCount<=35000) //CZ-AD border
                   fD.stress=Rotate90(ref_pos-fD.newcentroid);

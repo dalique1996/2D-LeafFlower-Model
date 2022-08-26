@@ -71,7 +71,7 @@ Shininess: 32
 Specular: 0.2
 UnsharpStrength: 1
 MaxNbPeels: 10
-CameraFrame: 0.999859 0.00697852 0.0152889 0 -0.00665179 0.999751 -0.0213177 0 -0.0154338 0.021213 0.999656 0 8.88178e-16 -8.88178e-16 -329.72 1
+CameraFrame: 0.999859 0.00697852 0.0152889 0 -0.00665179 0.999751 -0.0213177 0 -0.0154338 0.021213 0.999656 0 8.88178e-16 -1.77636e-15 -329.72 1
 SceneRadius: 500
 CameraZoom: 0
 
@@ -1211,7 +1211,7 @@ ParmString: False
 ParmName: Set Position
 ParmString: False
 ParmName: Cell Position
-ParmString: 0.2
+ParmString: 0.05
 ParmName: Set Initial Auxin
 ParmString: False
 ParmName: Initial Auxin
@@ -2337,7 +2337,7 @@ NumParms: 0
 ProcessName: Tools/System/Save View
 NumParms: 1
 ParmName: File Name
-ParmString: /home/daniel/Desktop/models/MDX/mdx_oofs/oofs/ext/01-GridModels/ext/FINAL/LEAF/Leaf.mdxv
+ParmString: /home/daniel/Downloads/drive-download-20220825T210109Z-001/LEAF/Leaf.mdxv
 ProcessName: Tools/System/Snapshot
 NumParms: 6
 ParmName: File Name
